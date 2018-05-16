@@ -1,2 +1,1 @@
-# spring-cloud-gym
-Spring Cloud demo project
+# spring-boot-quick-start

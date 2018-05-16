@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.wang1365</groupId>
+  <artifactId>eshop</artifactId>
+  <version>0.9.0</version>
+
+  <packaging>pom</packaging>
+  <name>Spring Cloud Demo Project</name>
+  <description>A practise for Spring Cloud Config, Netflix Eureka, Netflix Hystrix, Feign, Ribbon, Zuul</description>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <thymeleaf.version>3.0.6.RELEASE</thymeleaf.version>
+    <thymeleaf-layout-dialect.version>2.2.0</thymeleaf-layout-dialect.version>
+    <thymeleaf-extras-springsecurity4.version>3.0.2.RELEASE</thymeleaf-extras-springsecurity4.version>
+  </properties>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.10.RELEASE</version>
+  </parent>
+
+  <modules>
+    <module>order-service</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>Edgware.SR3</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
